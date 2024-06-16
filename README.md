@@ -1,46 +1,48 @@
-# Getting Started with Create React App
+# Commit 信息规范
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+这些术语通常用于 Git 提交信息中，以描述不同类型的更改。它们是基于 [Conventional Commits](https://www.conventionalcommits.org/) 规范的。以下是每个术语的含义：
 
-## Available Scripts
+1. **build**: 与构建系统或外部依赖项相关的更改（如构建脚本、依赖包、生成的文件）。
 
-In the project directory, you can run:
+   - 示例: `build: update webpack configuration`
 
-### `npm start`
+2. **chore**: 日常事务性工作，通常不会修改源代码或测试文件（如更新工具、配置文件）。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   - 示例: `chore: update npm scripts`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. **ci**: 持续集成配置的更改（如 Travis、Circle、Jenkins、GitLab CI 等 CI 配置文件的更改）。
 
-### `npm test`
+   - 示例: `ci: update Travis CI configuration`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **docs**: 文档的更改（如 README、API 文档、注释）。
 
-### `npm run build`
+   - 示例: `docs: add contribution guide`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. **feat**: 新功能的引入。
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   - 示例: `feat: add user login functionality`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. **fix**: 修复 bug。
 
-### `npm run eject`
+   - 示例: `fix: correct header alignment issue`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+7. **perf**: 提升性能的更改。
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   - 示例: `perf: improve page load speed by optimizing images`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+8. **refactor**: 代码重构，既不修复 bug 也不添加新功能的代码更改。
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   - 示例: `refactor: simplify user authentication logic`
 
-## Learn More
+9. **revert**: 撤销先前的提交。
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   - 示例: `revert: revert commit 1234567`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+10. **style**: 代码风格的更改（如缩进、空格、格式化），不影响代码功能。
+
+    - 示例: `style: format code with prettier`
+
+11. **test**: 添加或修改测试。
+    - 示例: `test: add unit tests for user service`
+
+使用这些术语可以帮助项目维护人员和其他开发人员快速了解每次提交的目的和影响，从而提高代码审查和项目管理的效率。
