@@ -24,7 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "commitlint": "commitlint --edit"
+    "commitlint": "commitlint --edit",
+    "json-server": "json-server --watch __json_server_mock__/db.json"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +49,7 @@
   "devDependencies": {
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9.0.11",
+    "json-server": "^1.0.0-beta.1",
     "lint-staged": "^15.2.6",
     "prettier": "3.3.2"
   },
