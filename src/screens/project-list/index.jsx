@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import { cleanObject } from "../../utils";
 import * as qs from 'qs'
 
-export const ProjectListScreen = () => {
+const apiUrl = process.env.REACT_APP_API_URL
 
-  const apiUrl = process.env.REACT_APP_API_URL
+export const ProjectListScreen = () => {
 
   const [param, setParam] = useState({
     name: '',
