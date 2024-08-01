@@ -1,6 +1,4 @@
 import { FormEvent } from "react";
-import * as qs from "qs";
-import { cleanObject } from "../../utils";
 
 const apiUrl = process.env.REACT_APP_API_URL;
 
