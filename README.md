@@ -46,3 +46,22 @@
     - 示例: `test: add unit tests for user service`
 
 使用这些术语可以帮助项目维护人员和其他开发人员快速了解每次提交的目的和影响，从而提高代码审查和项目管理的效率。
+
+# 遇到的一些报错
+
+## 问题 1 - `npx imooc-jira-tool` 执行报错
+
+```shell
+$ npx imooc-jira-tool
+npm error could not determine executable to run
+npm error A complete log of this run can be found in: /Users/xxx/.npm/_logs/2024-08-01T13_44_35_553Z-debug-0.log
+```
+
+解决办法：
+
+```shell
+$ npm install jira-dev-tool
+$ npx msw init ./public
+```
+
+其实就是将执行命令 `imooc-jira-tool` 的自动化过程手动自己执行一下。猜测问题是 `npx` 无法找到 `imooc-jira-tool` 这个包的可执行文件（who knows?）。
